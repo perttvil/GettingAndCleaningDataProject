@@ -44,7 +44,7 @@ testData$ACTIVITY <- testActivitiesTable$ACTIVITY
 data <- rbind(testData,trainData)
 
 # Filter columns by name
-columns <- which(grepl( "mean()|std()|ACTIVITY|SUBJECT", names(data)))
+columns <- which(grepl( "mean\\(\\)|std\\(\\)|ACTIVITY|SUBJECT", names(data)))
 filteredData <- as.data.frame(data)[, columns]
 dataTable <- as.data.table(filteredData)
 tidyDataSet <- dataTable[, lapply(.SD,mean), by=c("SUBJECT", "ACTIVITY")]
