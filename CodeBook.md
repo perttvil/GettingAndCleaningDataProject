@@ -40,9 +40,12 @@ measurement values in tidy data set are calculated averages from multiple measur
 very mean value and standard deviation value.
 
 ###tidydata set contains following columns.
-SUBJECT
-ACTIVITY
-tBodyAcc-mean()-X
+SUBJECT (subject id)
+ACTIVITY (activity name)
+
+(all following columns are calculated averages by subject and activity from original measurements)
+
+tBodyAcc-mean()-X 
 tBodyAcc-mean()-Y
 tBodyAcc-mean()-Z
 tBodyAcc-std()-X
